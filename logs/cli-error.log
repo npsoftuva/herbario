@@ -1,0 +1,42 @@
+2017-06-08 22:09:55 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'herbario.collections,' doesn't exist in C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'collections,', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('collections,', Array)
+#2 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Schema\CachedCollection->describe('collections,')
+#3 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\ORM\Table.php(652): Cake\ORM\Table->getSchema()
+#4 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(215): Cake\ORM\Table->getPrimaryKey()
+#5 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'collections,', 'Collections,')
+#7 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Collections,')
+#8 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Collections,')
+#9 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('collections,', 0)
+#10 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Console\Shell.php(458): Bake\Shell\BakeShell->all('collections,', 'species,', 'locals')
+#12 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 C:\wamp64\www\herbario\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
+2017-06-08 22:11:58 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'herbario.collecttors' doesn't exist in C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'collecttors', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('collecttors', Array)
+#2 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Schema\CachedCollection->describe('collecttors')
+#3 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\ORM\Table.php(652): Cake\ORM\Table->getSchema()
+#4 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(215): Cake\ORM\Table->getPrimaryKey()
+#5 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'collecttors', 'Collecttors')
+#7 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Collecttors')
+#8 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Collecttors')
+#9 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('collecttors', 0)
+#10 C:\wamp64\www\herbario\vendor\cakephp\bake\src\Shell\BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Console\Shell.php(458): Bake\Shell\BakeShell->all('collecttors')
+#12 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 C:\wamp64\www\herbario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 C:\wamp64\www\herbario\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
